@@ -6,6 +6,8 @@
  *  goldfirestudios.com
  *
  *  MIT License
+ * 
+ * 
  */
 
 (function() {

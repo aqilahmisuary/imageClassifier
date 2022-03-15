@@ -16,22 +16,22 @@ let str;
 var allText;
 
 var sound_01 = new Howl({
-  src: ['/audio/audio_01.wav'],
+  src: ['./audio/audio_01.wav'],
   format: ['wav']
 });
 
 var sound_02 = new Howl({
-  src: ['/audio/audio_02.wav'],
+  src: ['./audio/audio_02.wav'],
   format: ['wav']
 });
 
 var sound_03 = new Howl({
-  src: ['/audio/audio_03.wav'],
+  src: ['./audio/audio_03.wav'],
   format: ['wav']
 });
 
 var sound_04 = new Howl({
-  src: ['/audio/audio_04.wav'],
+  src: ['./audio/audio_04.wav'],
   format: ['wav']
 });
 
@@ -173,7 +173,7 @@ function readTextFile(file)
 
 
 //Read dataset
-readTextFile("/datasets/dataset.txt");
+readTextFile("dataset.txt");
 //Load dataset into classifier
 load();
 //Run classifier app

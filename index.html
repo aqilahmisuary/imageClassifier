@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <!-- Load TensorFlow.js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/3.13.0/tf.js" integrity="sha512-ZBd+CfuJTqQfXvXAHE4P+g2LZR855Hm2hmqVP2oL7/q9nCYaRJH7ghb4eKx8ZsR8vyYBWVGboEaBspKiVXFnrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Load MobileNet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+    <!-- Load KNN Classifier -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+    <!-- Load HowlerJS -->
+    <script src="/libraries/howler.core.js"></script>
+
+    
+  </head>
+  <body>
+    <div id="buttons">
+    <button id="class-gyan">Add Gyan</button>
+    <button id="class-shuni">Add Shuni</button>
+    <button id="class-surya">Add Surya</button>
+    <button id="class-buddhi">Add Buddhi</button>
+    <button id="class-nothing">Add Nothing</button>
+    <button id="save">Save Dataset</button>
+    <button id="start">Start Audio</button>
+    <input type="button" id="dwn-btn" value="Download Dataset"/>
+     </div>
+
+     <!-- <img id="img" crossorigin src="assets/dog.jpeg" width="227" height="227"/> -->
+     <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+     <div id="console"></div>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
